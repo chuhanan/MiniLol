@@ -24,10 +24,13 @@ var lolClient = lol.client({
 //     }
 // }
 
-app.get('/',function(req,res,next){
-    var arr = ["Heart"];
+app.get('/:name', function(req,res,next){
+    // 获取到 url
+    var param = req.url.split('/')[1];
+    console.log(param);
+    var arr = [param];
     lolClient.getSummonersByName('kr', arr, function(err, data) {
-        console.log("Found ", data);
+        // console.log("Found ", data);
         // lolClient.destroy();
         res.send(data);
         next

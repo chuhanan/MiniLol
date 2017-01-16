@@ -1,3 +1,4 @@
 
 node_modules
-data
+*.aof
+server/data/appendonly.aof
