@@ -22,3 +22,4 @@ cd MiniLol/server
 
 然后可以打开浏览器，如果是使用`VirtualBox`则输入虚拟机地址+8080，如果是 Mac 可以直接输入`127.0.0.1:8080`访问。
 
+> 获取虚拟机IP: docker-machine ip
