@@ -1,4 +1,4 @@
 
 node_modules
-*.aof
-server/data/appendonly.aof
+
+*.png

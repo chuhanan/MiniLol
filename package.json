@@ -4,11 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fetchimg": "node scripts/getChampion.js && node scripts/getItem.js && node scripts/getSummoner.js && node scripts/getRune.js",
+    "fetchChampions": "node scripts/getChampion.js",
+    "fetchItems": "node scripts/getItem.js",
+    "fetchSummoners": "node scripts/getSummoner.js",
+    "fetchRune": "node scripts/getRune.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "progress": "^1.1.8",
+    "request": "^2.79.0"
   }
 }
