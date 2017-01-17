@@ -33,12 +33,12 @@ Page({
     }
     // 请求接口
     wx.request({
-      url: 'http://192.168.99.100:8080/'+value,
+      url: 'http://192.168.99.100:8080/summoners/'+value,
       header: {
           'content-type': 'application/json'
       },
       success: function(res) {
-        // console.log(res.data)
+        console.log(res.data)
         let persons = [];
         for(let person in res.data) {
           persons.push(res.data[person])
